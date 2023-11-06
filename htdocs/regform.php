@@ -17,9 +17,9 @@ fullName, age ,gender, birthday, email, number, studentNumber, yearLevel, degree
 	{
 		$stmt = $conn->prepare("insert into registration('')
 			value(?, ?, ?, ?, ?, ?, ?, ?, ?)");
-		$stmt -> blind_param("sisssiiss", $fullName, $age ,$gender, $birthday, $email, $number, $studentNumber, $yearLevel, $degreeProgram);
+		$stmt -> blind_param("sssssiiis", $fullName, $age ,$gender, $birthday, $email, $number, $studentNumber, $yearLevel, $degreeProgram);
 		$stmt->execute();
-		echo "registration dsuccessfully";
+		echo "registration successfully";
 		$stmt->close();
 		$conn->cosel();
 	}
