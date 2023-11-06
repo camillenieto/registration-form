@@ -9,7 +9,7 @@
 	$yearLevel = $_POST['yearLevel'];
 	$degreeProgram = $_POST['degreeProgram'];
 
-	$conn = new mysqli('localhost', 'root', 'database');
+	$conn = new mysqli('localhost', 'root', 'registration-form');
 	if($conn->connect_error){
 		die('Connection Failed : '.$conn->connect_error);
 	}
