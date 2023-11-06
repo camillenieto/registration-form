@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-<div class="container">
-    <h1>Student Registration Form</h1>
-    <form action="regform.php" method="post">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registration Form</h1>
+      <form action="regform.php" method="post">
         <div class="form-group">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" />
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" />
         </div>
         <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" />
+          <label for="age">Ages:</label>
+          <input type="number" id="age" name="age" />
         </div>
         <div class="form-group">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" >
-                <option value="" disabled selected>Select Gender</option>
-                <option value="Male">Male </option> 
-                <option value="Female">Female </option>
-                <option value="Others">Others </option>
-            </select>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
         </div>
         <div class="form-group">
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" />
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" />
         </div>
         <div class="form-group">
-            <label for="eMail">Email:</label>
-            <input type="email" id="emil" name="email" />
+          <label for="eMail">Email:</label>
+          <input type="email" id="emil" name="email" />
         </div>
         <div class="form-group">
-            <label for="number">Phone Number:</label>
-            <input type="tel" id="number" name="number" pattern="[0-9]{11}" />
+          <label for="number">Phone Number:</label>
+          <input type="tel" id="number" name="number" pattern="[0-9]{11}" />
         </div>
         <div class="form-group">
-            <label for="studentNumber">Student Number:</label>
-            <input type="text" id="studentNumber" name="studentNumber" />
+          <label for="studentNumber">Student Number:</label>
+          <input type="text" id="studentNumber" name="studentNumber" />
         </div>
         <div class="form-group">
-            <label for="yearLevel">Year Level:</label>
-            <input type="text" id="yearLevel" name="yearLevel" />
+          <label for="yearLevel">Year Level:</label>
+          <input type="text" id="yearLevel" name="yearLevel" />
         </div>
         <div class="form-group">
           <label for="degreeProgram">Degree Program:</label>
-          <select id="degreeProgram" name="degreeProgram" >
-              <option value="" disabled selected>Select Degree Program</option>
-              <option value="Accountancy">Accountancy</option>
-              <option value="Business Administration">Business Administration</option>
-              <option value="Banking and Finance">Banking and Finance</option>
-              <option value="Management Accounting">Management Accounting</option>
-              <option value="Environmental Planning">Environmental Planning</option>
-              <option value="Interior Design">Interior Design</option>
-              <option value="Computer Science">Computer Science</option>
-              <option value="Information Technology">Information Technology</option>
-              <option value="Broadcasting ">Broadcasting</option>
-              <option value="Computer Engineering">Computer Engineering</option>
-              <option value="Civil Engineering">Civil Engineering</option>
-              <option value="Electrical Engineering">Electrical Engineering</option>
-              <option value="Electronics Engineering">Electronics Engineering</option>
-              <option value="Chemical Engineering">Chemical Engineering</option>
-              <option value="Industrial Engineering">Industrial Engineering</option>
-              <option value="Mechanical Engineering">Mechanical Engineering</option>
-              <option value="Railway Engineering">Railway Engineering</option>
-              <option value="Political Science">Political Science</option>
-              <option value="Biology">Biology</option>
-              <option value="Chemistry">Chemistry  </option>
-              <option value="Applied Mathematics">Applied Mathematics</option>
-              <option value="Physics ">Physics </option>
-              <option value="Hospitality Management">Hospitality Management</option>
-              <option value="Tourism Management">Tourism Management</option>
-              <option value="Entrepreneurship ">Entrepreneurship </option>
-              <option value="Other">Other (Please Specify)</option>
-              <!-- Add more options as needed -->
-            </select>
-          </div>
-          <div class="form-group" id="customDegreeProgramInput">
-              <label for="customDegreeProgram">Specify Degree Program:</label>
-              <input type="text" id="customDegreeProgram" name="customDegreeProgram" />
-          </div>
-            <button type="submit">Submit</button>
+          <select id="degreeProgram" name="degreeProgram">
+            <option value="" disabled selected>Select Degree Program</option>
+            <option value="Accountancy">Accountancy</option>
+            <option value="Business Administration">
+              Business Administration
+            </option>
+            <option value="Banking and Finance">Banking and Finance</option>
+            <option value="Management Accounting">Management Accounting</option>
+            <option value="Environmental Planning">
+              Environmental Planning
+            </option>
+            <option value="Interior Design">Interior Design</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">
+              Information Technology
+            </option>
+            <option value="Broadcasting ">Broadcasting</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Electrical Engineering">
+              Electrical Engineering
+            </option>
+            <option value="Electronics Engineering">
+              Electronics Engineering
+            </option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Industrial Engineering">
+              Industrial Engineering
+            </option>
+            <option value="Mechanical Engineering">
+              Mechanical Engineering
+            </option>
+            <option value="Railway Engineering">Railway Engineering</option>
+            <option value="Political Science">Political Science</option>
+            <option value="Biology">Biology</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Applied Mathematics">Applied Mathematics</option>
+            <option value="Physics ">Physics</option>
+            <option value="Hospitality Management">
+              Hospitality Management
+            </option>
+            <option value="Tourism Management">Tourism Management</option>
+            <option value="Entrepreneurship ">Entrepreneurship</option>
+            <option value="Other">Other (Please Specify)</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div class="form-group" id="customDegreeProgramInput">
+          <label for="customDegreeProgram">Specify Degree Program:</label>
+          <input
+            type="text"
+            id="customDegreeProgram"
+            name="customDegreeProgram"
+          />
+        </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
-<script src="regForm.js"></script>
-</body>
+    <script src="regForm.js"></script>
+  </body>
 </html>
